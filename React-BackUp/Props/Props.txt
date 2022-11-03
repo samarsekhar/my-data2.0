@@ -1,0 +1,10 @@
+React Props
+-----------
+
+-> Props stand for "Properties".
+-> They are read-only components.
+-> It is object which stores the value of attributes tag and work similar to HTML attributes.
+-> It gives to pass data from one component to other components.
+-> Props are immutable so it connot modify the props from inside the components.
+-> The component as 'this.props' and can be used to render dynamic data in render method.
+
