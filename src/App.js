@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Product from './PropsCls/Product';
 
 function App() {
   return (

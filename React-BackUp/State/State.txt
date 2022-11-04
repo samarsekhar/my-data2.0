@@ -1,0 +1,9 @@
+React State 
+-----------
+
+-> The state is updatable structure that is used to contain data or information about the component.
+-> The state in a component can change over time.
+-> Change state over time can happen as a response to user action or system event.
+-> A component with state is know as stateful components.
+-> State is used to store the data of the components that have to be rendered to the view.
+-> State are responsible for marking a component dynamic and interactive.
