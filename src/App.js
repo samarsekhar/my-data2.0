@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <h1>Details</h1>
-      <Product/>
     </div>
   );
 }
