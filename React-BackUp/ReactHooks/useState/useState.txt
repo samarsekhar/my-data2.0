@@ -1,0 +1,5 @@
+Notes:- useState  lets use local state within a function component.
+
+call signature: const [state, setState] = useState(initialStateValue);
+
+setState = state Updater function

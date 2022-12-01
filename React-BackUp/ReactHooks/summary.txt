@@ -1,0 +1,64 @@
+#1   Manage state;
+
+useState :
+const [count, setCount] = useState(initialCount);
+
+useReducer :
+const [state, dispatch] = useReducer(
+    reducer,
+    initialState,
+    initialDispatch
+);
+
+
+#2    Handle side effects;
+
+useEffect :-
+useEffect(() => {
+    applyEffect(dependencies);
+    return () => cleanupEffect();
+}, [dependencies]);
+
+useLayoutEffect:-
+useLayoutEffect(() => {
+    applyBlockongEffect(dependencies);
+    return cleanupEffect();
+}, [dependencies]);
+
+
+#3     Use the Context API
+
+useContext :-
+const ThemeContext = React.createContext();
+const contextValue = useContext(ThemeContext);
+
+
+#4     Memoize everything
+useMemo :-
+const memoizedValue = useMemo(
+    () => expensiveFn(dependencies),
+    [dependencies]
+);
+
+useCallback :-
+const memoizedCallback = useCallback(
+    expensiveFn(dependencies),
+    [dependencies]
+);
+
+
+#5      Use refs
+useRef :-
+const ref = useRef();
+
+useImperativeHandle :-
+useImperativeHandle(
+    ref,
+    createHandle,
+    [dependencies]
+)
+
+
+#6      Reusability
+
+Extract reusable behaviour into custom hooks
