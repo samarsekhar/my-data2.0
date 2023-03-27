@@ -1,0 +1,25 @@
+<!--
+What are Cookies:- Web Browsers and Servers use HTTP protocol to communicate and HTTP is a stateless protocol.But for a commercial website, it is required to maintain session information among different pages.
+                   for example, one user registration ends after completing many pages.
+-->
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="myForm" action="">
+            Enter name: <input type="text" name="customer"/>
+            <input type="button" value="Set Cookie" onclick="WriteCookie()" />
+        </form>
+        <script type="text/javascript">
+            function WriteCookie() {
+                if (document.myForm.customer.value == "") {
+                    alert("Enter some value");
+                    return;
+                }
+                cookievalue = escape(document.myForm.customer.value)+ ";";
+                document.cookie = " name= " + cookievalue;
+                document.write("Setting Cookies: " + " name= " + cookievalue);
+            }
+        </script>
+    </body>
+</html>
