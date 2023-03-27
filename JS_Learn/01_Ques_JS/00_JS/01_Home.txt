@@ -1,0 +1,23 @@
+JavaScript is a lightweight, interpreted, Oject-orientend programming language. 
+JavaScript is a dynamic computer programming language. 
+It is designed for creating network-centric applications. 
+JavaScript is very easy to implement because it is integrated with HTML. 
+It is open and cross-platform.
+Is best known as the scripting language for web page, but
+It's used in many non-browser enviroments as well.
+-> lightweight means - Small memory footprint, easy to implement.
+-> Interpreted - No compilation, Insructions ececuted directly.
+-> Oject-orientend - Modeled around objects.
+-> First-class function - function of values.
+-> scripting language - Insructions written for a runtime enviroment.
+
+Why to learn JavaScript:
+JavaScript is must a great Software Engineer specially when they are working in Web Development Domain.
+Javascript is the most popular programming language in the world and that makes it a programmer’s great choice. 
+Once you learnt Javascript, 
+it helps you developing great front-end as well as back-end softwares using different Javascript based frameworks like jQuery, Node.JS etc.
+
+Client-Side JavaScript:
+Client-Side The script should be included in or refernced by an HTML document the code to be interpreted by the browser.
+
+

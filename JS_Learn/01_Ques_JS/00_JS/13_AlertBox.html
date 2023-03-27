@@ -1,0 +1,40 @@
+<!--Confirmation Dialog Box
+<html>
+    <head><title>Confirmation Dialog Box</title></head>
+    <script>
+        function getConfirmation() {
+            var retVal = confirm("Do you want to continue ?");
+            if (retVal == true) {
+                document.write ("User wants to continue!");
+                return true;
+            } else {
+                document.write ("User does not want to continue!");
+                return false;
+            }
+        }
+    </script>
+    <body>
+        <p>Click the following button to see the result: </p>
+        <form>
+            <input type="button" value="Click Me" onclick=getConfirmation() />
+        </form>
+    </body>
+</html>
+
+-->
+
+<!--Prompt Dialog Box-->
+<html>
+    <head><title>Prompt Dialog Box</title></head>
+    <script>
+        function getValue() {
+            var retVal = prompt("Enter your text: ", "Enter Text");
+            document.write("You have entered : " + retVal);
+        }
+    </script>
+        <form>
+            <p>Click the following button to see the result: </p>
+            <input type="button" value="click me" onclick=getValue() />
+        </form>
+    </body>
+</html>
