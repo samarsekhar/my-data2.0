@@ -1,0 +1,45 @@
+<html>
+    <head><title>User-defined objects</title>
+        <script>
+            // Define a function which will work as a method
+            function addPrice(amount) {
+                this.price = amount;
+            }
+            function book(title, author) {
+                this.title = title;
+                this.author = author;
+                this.addPrice = addPrice;  // Assign that method as property.
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+            var myBook = new book("JavaScript ECMAScript 6", "Brendan Eich");
+            myBook.addPrice(100);
+
+            document.write("Book title is : " + myBook.title + "<br>");
+            document.write("Book author is : " + myBook.author + "<br>");
+            document.write("Book price is : " + myBook.price + "<br>")
+        </script>
+    </body>
+</html>
+
+<!-- <html>
+    <head>
+        <title>User-defined Objects</title>
+        <script>
+            function book(title, author) {
+                this.title = title;
+                this.author = author;
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var myBook = new book("JavaScript ECMAScript 6", "Brendan Eich");
+            document.write("Book title is : " + myBook.title + "<br>");
+            document.write("Book author is : " + myBook.author + "<br>");
+        </script>
+    </body>
+</html> -->

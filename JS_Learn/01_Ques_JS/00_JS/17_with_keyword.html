@@ -1,0 +1,38 @@
+<!--The 'with' keyword
+    The 'with' keyword is used as a kind of shorthand for referencing an object's properties or methods.
+    The object specified as an argument to with becomes the default object for the duration of thr blovk that follows.
+    The properties and methods for the object can be used without naming the object.
+    Syntax-
+    with (object) {
+        properties used without the object name and dot
+    }
+-->
+<html>
+    <head>
+        <title>User-defined objects</title>
+        <script>
+            function addPrice(amount) {
+                with(this) {
+                    price = amount;
+                }
+            }
+            function book(title, author) {
+                this.title = title;
+                this.author = author;
+                this.price = 0;
+                this.addPrice = addPrice;   // Assign that method as property.
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+            var myBook = new book("JavaScript ECMAScript 6", "Brendan Eich");
+            myBook.addPrice(1000);
+
+            document.write("Book title is : " + myBook.title + "<br>");
+            document.write("Book author is : " + myBook.author + "<br>");
+            document.write("Book price is : " + myBook.price + "<br>");
+        </script>
+    </body>
+</html>
