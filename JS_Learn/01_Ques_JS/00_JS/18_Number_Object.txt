@@ -1,0 +1,24 @@
+THE NUMBER OBJECTS.   
+   The Number object represents numerical date, either integers or floating-point numbers.
+   THe Number objects are the browser automatically converts number literals to instances of number class.
+
+   Syntax: var val = new Number(number);
+   if you provide any non-number argument, then the argument cannot be convertedninto a number, it returns NaN(Not-a-Number).
+
+   `Number Properties`
+   MAX_VALUE :- The largest possible value a number in JS can have 1.7898452484286429939326429E+308
+   MIN_VALUE :- The smallest possible value a number un JS can have 5E-324
+   NaN :- Equal to a value that is not a number.
+   NEGATIVE_INFINITY :- A value that is less than MIN_VALUE.
+   POSITIVE_INFINITY :_ A value that is greater than MAX_VALUE.
+   prototype :- A static property of the Number object. Use the prototype property to assign new properties and methods to the Number object in the current document.
+   constructor :- Returns the function that created this object's instance. By default this is the Number object.
+
+   `Number Methods`
+   toExponential() -> Forces a number to display in exponential notation, even if the number is in the range in which JavaScript normally uses standard notation.
+   toFixed() -> Formats a number with a specific number of digits to the right of the decimal.
+   toLocaleString() -> Returns a string value version of the current number in a format that may vary according to a browser's local settings.
+   toPrecision() -> Defines how many total digits (including digits to the left and right of the decimal) to display of a number.
+   toString() -> Returns the string representation of the number's value.
+   valueOf() -> Returns te number's value.
+   

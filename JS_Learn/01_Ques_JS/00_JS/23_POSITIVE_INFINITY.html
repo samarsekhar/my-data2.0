@@ -1,0 +1,24 @@
+<!--
+    As POSITIVE_INFINITY is a constant, it is a read-only property of Number.
+-->
+
+<html>
+    <head>
+        <title>The Number object POSITIVE_INFINITY</title>
+        <script>
+            function showValue() {
+                var bigNumber = Number.MAX_VALUE * 2
+                if (bigNumber == Number.POSITIVE_INFINITY) {
+                    alert("Value of bigNumber : " + bigNumber);
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p>Click the following to see the result: </p>
+        <form>
+            <input type="button" value="Click Me" onclick=showValue() />
+        </form>
+    </body>
+</html>

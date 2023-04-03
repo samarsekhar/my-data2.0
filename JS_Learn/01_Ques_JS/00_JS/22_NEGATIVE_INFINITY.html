@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>The Number object NEGATIVE_INFINITY</title>
+        <script>
+            function showValue() {
+                var smallNumber = (-Number.MAX_VALUE) * 2
+                if (smallNumber == Number.NEGATIVE_INFINITY) {
+                    alert("Value of smallNUMber : " + smallNumber);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following to see the result: </p>
+        <form>
+            <input type="button" value="CLick Me" onclick=showValue() />
+        </form>
+    </body>
+</html>
+
+<!--
+    Because NEGATIVE_INFINITY is a constant, it is a read-only property of Number.
+-->
