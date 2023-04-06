@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>JavaScript String replace() Method</title>
+    </head>
+
+    <body>
+        <script>
+            var re = /(\w+)\s(\w+)/;
+            var str = "zara ali";
+            var newstr = str.replace(re, "$2, $1");
+            document.write(newstr);
+        </script>
+    </body>
+</html>
+
+<!--
+    output:- ali, zara
+-->
+
+<!--
+    This method finds a match between a regular expression and a string, and replaces the matched substring with a new substring.
+-->
+
+<!-- <html>
+    <head>
+        <title>JavaScript String replace() Method</title>
+    </head>
+
+    <body>
+        <script>
+            var re = /apples/gi;
+            var str = "Apples are round, and apples are juicy.";
+            var newstr = str.replace(re, "oranges");
+            document.write(newstr );
+        </script>
+    </body>
+</html> 
+
+output:- oranges are round, and oranges are juicy.
+
+-->

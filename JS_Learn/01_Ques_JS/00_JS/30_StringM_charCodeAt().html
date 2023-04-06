@@ -1,0 +1,35 @@
+<htmL>
+    <head>
+        <title>JavaScript String charCodeA() Method</title>
+    </head>
+
+    <body>
+        <script>
+            var str = new String("This is string");
+            document.write("str.charCodeAt(0) is : " + str.charCodeAt(0));
+            document.write("<br>str.charCodeAt(1) is : "+ str.charCodeAt(1));
+            document.write("<br>str.charCodeAt(2) is : "+ str.charCodeAt(2));
+            document.write("<br>str.charCodeAt(3) is : "+ str.charCodeAt(3));
+            document.write("<br>str.charCodeAt(4) is : "+ str.charCodeAt(4));
+            document.write("<br>str.charCodeAt(5) is : "+ str.charCodeAt(5));
+        </script>
+    </body>
+</htmL>
+
+<!-- output :-
+    str.charCodeAt(0) is : 84 
+    str.charCodeAt(1) is : 104
+    str.charCodeAt(2) is : 105
+    str.charCodeAt(3) is : 115
+    str.charCodeAt(4) is : 32
+    str.charCodeAt(5) is : 105
+-->
+<!--
+    This mwthod returns a number indicating the Unicode value of the charachter at the given index.
+
+    Unicode code points range from 0 to 1,114,111.
+
+    Argument Details - 
+    index - An integer between 0 and 1 less than the length of thr string; if unspecified, defaults to 0.
+
+-->
