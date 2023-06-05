@@ -1,0 +1,160 @@
+No1 - What is React JS ?
+      React JS is an open-source frontend JavaScript library which is used to build user interfaces and handle view layer for web and mobile applications.
+      It follows a component-based approach.
+      The react package contains only the functionality necessary to define React components.
+      It is typically used together with a react renderer like react-DOM for the web or react-native for the native environments.
+
+No2 - What are the features of ReactJS?
+      Virtual DOM, Sever-side rendering, and uni-directional data flow or data binding.
+
+No3 - List some of the major advantages Of React.
+      Increases the applications performance,
+      Can be used on the client as well as server side,
+      Readability is improved,
+      Easy to intergrate,
+      Easy to write UI test cases.
+
+No4 - What are the limitations of React?
+      React is just the view like library,not a full scale framework,
+      library is quite large,
+      Difficult for the novice programmers to understand,
+      Uses inline templating and JSX.
+
+No5 - What is JSX?
+      JSX stands for JavaScript XML.
+      Utilizes the expressiveness of JavaScript with a HTML-like template syntax.
+      Makes HTML easy to understand
+      It is Robust.
+      Boots up the JS Performance.
+      JSX expression must have only one outermost element.
+
+No6 - What do you understand by Virtual DOM?Explain its working.
+      A virtual DOM is a lightweight JavaScript object which is the copy of the real DOM.
+      This Virtual DOM works in three steps:-
+         i- Whenever any underlying data changes, the entire UI is re-rendered in Virtual DOM representation.
+         ii- Then the difference between the previous DOM representation and the new one is calculated.
+         iii- Once the calculations are done, the real DOM will be updated with only the things that have actually changed.
+
+No7 - Differentiate between Real DOM & Virtual DOM?
+      Real DOM- It updates show,It Can directly update HTML, Create a new DOM if element updates,It DOM manipulation is very expensive,And too much of memory wastage.
+      Virtual DOM- It updates faster, It Can't directly update HTML,It Upadates the JSX if element updates, DOM manipulation is very easy,And No memory wastage.
+
+No8- Why can't browsers read JSX?
+     JSX is not a regular JavaScript obejct,It browsers can read JavaScript object only.
+     JSX file is converted to JS object by JSX transformers like Babel,before reaching browser.
+
+No9- What is JSX Transform?
+     JSX transform automatically compiles the JSX source code without having to rely upon the typical compiles.
+     With the new transform it JSX can be use without importing React.
+     Compiled output slightly improves the bundle size.
+
+No10- How are Errors handled in React?
+      The most distincive and React-specific type of error handling is known as error boundaries.
+      Error boundaries are React components that catch JavaScript errors anywhere in their child component tree.log those errors, and display a fallback UI instead of the component tree that crashed.
+
+No11 - What are the limitations of Error Boundaries in React?
+       Error boundaries do not catch errors for: Event handlers, Asynchronous code, Server-side rendering, Errors thrown in the error boundary itself.
+
+No12 - What are the features introduced in ES7?
+       ECMAScript 2016 introduced two new features:- Array.prototype.includes(), Exponentiation Operator.
+       Array.prototype.includes:- It checks the array for the value passed as an argument.It returns true if the array contains the value.otherwise,it returns false.
+       Exponentiation Operator:- ECMAScript 2016 introducedthe exponentiation operator,**.It has the same purpose as Mathpow().
+
+No13 - List someof the features of ES10.
+       Optional Catch Binding, Object.fromEntries, Array.flatMap, Dynamic Import, globalThis object.
+
+No14 - What do you understand from "In react, everything is a Component"?
+       Component are the building blocks of a React application's UI.
+       Components split up the entire UI into small independent and reusable pieces.
+       JavaScript functions which takes in arbitrary inputs & returns HTML representation.
+
+No15 - Explain the purpose of render() in React.
+       Every component must have a render function mandatorily.
+       It returns single react element which is the representation of native DOM component.
+       if more than HTML element inside rendered must be enclosing tag like <div>,<group>,<form> etc.
+       This function must be kept pure that is it must return same result.
+
+No16 - What are props in React?
+       Short for properties, Its read only components which must be kept pure that is immutable.
+       Always passed down from parent to child component.It used to render dynamic data.
+
+No17 - What is a State in React and how it is used?
+       The state are heart of react components.Its the source of data must be kept as simple as possible basically states are the objects which determine components rendering & behaviour they are mutable.
+       unlike the props and create dynamic and interactive components.They are accessed via this.state() function.
+
+No18 - Differentiate between State & Props.
+
+No19 - How can you update state of a component?
+
+No20 - Should we update the state directly?
+       We should not update the state directly because: 
+       If we update it directly.It calling the useState() function afterward may just replace the update we made.
+       When we directly update the state.It does not change this.state immediately.
+       We will lose control of the state across all components.
+
+No21 - What is Arrow function?How it's used?
+       Its Also called as Fat Arrow function(=>)
+       Its Allows to bind the context of components properly since auto-binding is not available by default in ES6.
+       Makes easier to work with higher order functions.
+
+No22 - How do you reference a DOM element?
+       An obejct this.refs which is found as an instance inside the component can be used to access DOM elements in ReactJS.
+
+No23 - What do you mean by Event Pooling? (Not Supported in react e.persist(); )
+       This means that the syntheticEvent object would be reused and all properties would be nullified after the event handler has been called.
+       earlier this would not work.
+
+No24 - What are React Hooks?
+       Functions that let us hook into React state and lifecycle features from a functional component.
+
+No25 - Do you know any of the techniques to optimize React app performance?
+     
+No26 - What is a Fragment in React?
+       Fragments let us group a list of children without adding extra nodes to the DOM.
+       While rendering multiple elements will require a 'div' tag around the content as the render method will only render a single root node inside it at a time.
+       In react 16.2 verdion, Fragments ware introduced,and we use them instead of the extraneous'div' tag.
+
+No27 - What is setState() ?
+       setState() function allows us to change state in a React class component.
+       This is the primary method you should use to update the UI.
+       setState() function does not always update the component immediately instead it may defer the update until later for performance.
+
+No28 - What is useState() ?
+       The useState() function is a React hook that allows to have state variables in functional components.
+       The useState hook is a special function that takes the initial state as an argument and returns an array of two entires.
+
+No29 - What do you mean by Context in React?
+       The React Context API is a way for a React app effectively produce global variables that can be passed around.
+       This is the alternative to "prop drilling".
+       A new type of context can be created using React.createContext API.
+
+No30 - What do you mean by Prop Driling?
+       It can be defined as a process in React application where props are passed from one part of a tree to another by going through other parts that do not need the data.but only help in passing it through the tree.
+       It is also known as Prop Threading.
+
+No31 - Differentiate between stateful and stateless components?
+
+No32 - What are the different phases of React components lifecycle method?
+
+No33 - Explain the lifecycle methods of React components in details.
+       .componentWillMount() is executed just before rendering both on client and server-side.
+       .componentDidMount() is executed after first render only on the client side.
+       .componentWillReceiveProps() is invoked as soon as the props are received from parent class before another render is called.
+       .shouldComponentUpdate() returns true or false value based on certain conditions.If you want  your component to update return true else return false.By default its false.
+       .componentWillUpdate() is called just before rendering takes place.
+       .componentDidUpdate()
+       .componentWillUnmount()
+
+No34- What is an event in React?
+      Events are the triggered reactions to specific actions like mouse hover, mouse click, key press and etc.
+      React events are similar to HTML, JavaScript events.
+
+No35 - How do you create an event in React?
+
+No36 - What are synthetic events in React?
+       Cross browser wrappers around the browsers native event system.
+       Combines the browsers behaviours into one API.
+       Done to ensure events have consistent properties across different browsers.
+
+No37 - What do you understand by refs in React?
+       
